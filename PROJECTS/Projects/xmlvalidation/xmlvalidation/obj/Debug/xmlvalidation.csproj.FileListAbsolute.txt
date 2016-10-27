@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\bin\Debug\xmlvalidation.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\bin\Debug\xmlvalidation.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\bin\Debug\xmlvalidation.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\obj\Debug\xmlvalidation.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\obj\Debug\xmlvalidation.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\xmlvalidation\xmlvalidation\obj\Debug\xmlvalidation.pdb

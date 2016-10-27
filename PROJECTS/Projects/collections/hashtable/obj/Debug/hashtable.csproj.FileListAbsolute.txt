@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\collections\hashtable\bin\Debug\hashtable.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\collections\hashtable\bin\Debug\hashtable.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\collections\hashtable\bin\Debug\hashtable.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\collections\hashtable\obj\Debug\hashtable.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\collections\hashtable\obj\Debug\hashtable.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\collections\hashtable\obj\Debug\hashtable.csprojResolveAssemblyReference.cache

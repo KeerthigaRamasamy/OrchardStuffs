@@ -1,0 +1,7 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\bin\Debug\wcf_host.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\bin\Debug\wcf_host.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\bin\Debug\wcf_class.dll
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\bin\Debug\wcf_class.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\obj\Debug\wcf_host.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\obj\Debug\wcf_host.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcf_host\obj\Debug\wcf_host.pdb

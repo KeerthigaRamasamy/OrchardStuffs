@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\bin\Debug\deserialize.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\bin\Debug\deserialize.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\bin\Debug\deserialize.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\obj\Debug\deserialize.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\obj\Debug\deserialize.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\xmlvalidation\deserialize\obj\Debug\deserialize.pdb

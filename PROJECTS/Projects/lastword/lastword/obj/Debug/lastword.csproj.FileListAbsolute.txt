@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\bin\Debug\lastword.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\bin\Debug\lastword.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\bin\Debug\lastword.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\obj\Debug\lastword.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\obj\Debug\lastword.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\lastword\lastword\obj\Debug\lastword.pdb

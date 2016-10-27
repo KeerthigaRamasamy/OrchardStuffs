@@ -1,0 +1,9 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\test_calc.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\test_calc.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\unit_test.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\unit_test.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\obj\Debug\test_calc.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\obj\Debug\test_calc.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\unit_test\test_calc\obj\Debug\test_calc.pdb

@@ -1,0 +1,20 @@
+﻿Build started 8/3/2016 3:53:13 PM.
+     1>Project "C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\hashing\hashing.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         Q:\VS2013PRO\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt hashing.c
+         hashing.c
+     1>c:\users\m1037727\documents\visual studio 2013\projects\hashing\hashing\hashing.c(11): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 q:\vs2013pro\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\hashing\hashing\hashing.c(13): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 q:\vs2013pro\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\hashing\hashing\hashing.c(59): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 q:\vs2013pro\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\hashing\hashing\hashing.c(9): warning C4101: 'm' : unreferenced local variable
+       Link:
+         Q:\VS2013PRO\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\Debug\hashing.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\Debug\hashing.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\Debug\hashing.lib" /MACHINE:X86 Debug\hashing.obj
+         hashing.vcxproj -> C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\Debug\hashing.exe
+     1>Done Building Project "C:\Users\M1037727\Documents\Visual Studio 2013\Projects\hashing\hashing\hashing.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.58

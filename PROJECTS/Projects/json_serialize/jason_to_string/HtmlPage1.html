@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <!--<script src="../Scripts/jquery-1.10.2.js"></script>-->
+    <!--<script type="text/javascript" src="jquery-3.1.0/jquery-3.1.0.js"></script>-->
+    <!--<script src="jquery-1.11.2.js"></script>-->
+    <!--<script type="text/javascript" src="/scripts/jquery.min.js"></script>--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var v = [
+                    {   
+                        "id":1,"name":"keerthi","age":21
+                    },
+                    { 
+                        "id": 2, "name": "karthik", "age": 22
+                    },
+                    {
+                        "id": 3," name": "anu", "age": 21
+                    },
+                    ];
+            var s = JSON.stringify(v);
+            $('#i1').html(s);
+        });
+        
+        </script>
+</head>
+<body>
+    <div id="i1"></div>
+    <!--<button id="b1">Json To Jason string</button>
+    <button id="b2">Json string to json object</button>-->
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\compound\compound\bin\Debug\compound.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\compound\compound\obj\Debug\compound.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\compound\compound\bin\Debug\compound.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\compound\compound\bin\Debug\compound.pdb
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\compound\compound\obj\Debug\compound.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\compound\compound\obj\Debug\compound.pdb

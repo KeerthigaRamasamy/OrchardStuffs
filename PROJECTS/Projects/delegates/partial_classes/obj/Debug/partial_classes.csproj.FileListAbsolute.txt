@@ -1,0 +1,5 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\partial_classes\bin\Debug\partial_classes.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\partial_classes\bin\Debug\partial_classes.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\partial_classes\bin\Debug\partial_classes.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\partial_classes\obj\Debug\partial_classes.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\partial_classes\obj\Debug\partial_classes.pdb

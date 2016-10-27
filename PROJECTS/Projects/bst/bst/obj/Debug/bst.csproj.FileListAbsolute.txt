@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\bst\bst\bin\Debug\bst.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\bst\bst\obj\Debug\bst.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\bst\bst\bin\Debug\bst.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\bst\bst\bin\Debug\bst.pdb
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\bst\bst\obj\Debug\bst.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\bst\bst\obj\Debug\bst.pdb

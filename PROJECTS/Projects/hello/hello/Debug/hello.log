@@ -1,0 +1,14 @@
+﻿Build started 7/25/2016 10:13:39 PM.
+     1>Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\hello\hello.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Q:\VS2013PRO\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\Debug\hello.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\Debug\hello.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\Debug\hello.lib" /MACHINE:X86 Debug\helloworld.obj
+         Debug\reducenumber.obj
+         Debug\uppertria.obj
+     1>reducenumber.obj : error LNK2005: _main already defined in helloworld.obj
+     1>uppertria.obj : error LNK2005: _main already defined in helloworld.obj
+     1>C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\Debug\hello.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\hello\hello\hello.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.83

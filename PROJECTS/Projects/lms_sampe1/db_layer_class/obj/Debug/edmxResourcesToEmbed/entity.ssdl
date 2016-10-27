@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LMSJuly2016Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="AuthorId" />
+    </Key>
+    <Property Name="AuthorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthorName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="AuthorDescription" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="BookAvailability">
+    <Key>
+      <PropertyRef Name="BookID" />
+      <PropertyRef Name="Availability" />
+    </Key>
+    <Property Name="BookID" Type="int" Nullable="false" />
+    <Property Name="Availability" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryDesc" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookDetails">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="Edition" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Publisher" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Availability" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookingDetails">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="RequestDate" Type="datetime" />
+    <Property Name="AcceptDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="ReturnDate" Type="datetime" />
+    <Property Name="StatusID" Type="int" Nullable="false" />
+    <Property Name="BookID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookingStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusDesc" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeOfUser">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescriptionUser" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserDetails">
+    <Key>
+      <PropertyRef Name="MID" />
+    </Key>
+    <Property Name="MID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="PhoneNo" Type="int" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__BookAvail__BookI__6B24EA82">
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="1" />
+    <End Role="BookAvailability" Type="Self.BookAvailability" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookDetails">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="BookAvailability">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookDetai__Autho__5CD6CB2B">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorId" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookDetai__Categ__5DCAEF64">
+    <End Role="BookCategory" Type="Self.BookCategory" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDe__BookI__656C112C">
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookDetails">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDe__Statu__6477ECF3">
+    <End Role="BookingStatus" Type="Self.BookingStatus" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDeta__MID__6383C8BA">
+    <End Role="UserDetails" Type="Self.UserDetails" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetails">
+        <PropertyRef Name="MID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="MID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserDetai__TypeI__1B0907CE">
+    <End Role="TypeOfUser" Type="Self.TypeOfUser" Multiplicity="1" />
+    <End Role="UserDetails" Type="Self.UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfUser">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="UserDetails">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_Delete_Authors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Delete_BookAvailability" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Delete_BookCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Delete_BookDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Delete_TYpeOfUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TypeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Delete_UserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_Authors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorName" Type="varchar" Mode="In" />
+    <Parameter Name="AuthorDescription" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_BookAvailability" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="Availability" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_BookCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryDesc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_BookDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Title" Type="varchar" Mode="In" />
+    <Parameter Name="AuthorId" Type="int" Mode="In" />
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="Edition" Type="varchar" Mode="In" />
+    <Parameter Name="Publisher" Type="varchar" Mode="In" />
+    <Parameter Name="Availability" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_BookingDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MID" Type="varchar" Mode="In" />
+    <Parameter Name="RequestDate" Type="datetime" Mode="In" />
+    <Parameter Name="AcceptDate" Type="datetime" Mode="In" />
+    <Parameter Name="DueDate" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnDate" Type="datetime" Mode="In" />
+    <Parameter Name="StatusID" Type="int" Mode="In" />
+    <Parameter Name="BookID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_BookingStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StatusDesc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_TypeOfUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DescriptionUser" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_UserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MID" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="TypeID" Type="int" Mode="In" />
+    <Parameter Name="PhoneNo" Type="int" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_Authors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorId" Type="int" Mode="In" />
+    <Parameter Name="Authorname" Type="varchar" Mode="In" />
+    <Parameter Name="AuthorDescription" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_BookAvailability" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="Availability" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_BookCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="CategoryDesc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_BookDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="Title" Type="varchar" Mode="In" />
+    <Parameter Name="AuthorId" Type="int" Mode="In" />
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="Edition" Type="varchar" Mode="In" />
+    <Parameter Name="Publisher" Type="varchar" Mode="In" />
+    <Parameter Name="Availability" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_TYpeOfUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TypeID" Type="int" Mode="In" />
+    <Parameter Name="DescriptionUser" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_UserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MID" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="TypeID" Type="int" Mode="In" />
+    <Parameter Name="PhoneNo" Type="int" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="LMSJuly2016ModelStoreContainer">
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookAvailability" EntityType="Self.BookAvailability" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookCategory" EntityType="Self.BookCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookDetails" EntityType="Self.BookDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingDetails" EntityType="Self.BookingDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookingStatus" EntityType="Self.BookingStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeOfUser" EntityType="Self.TypeOfUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BookAvail__BookI__6B24EA82" Association="Self.FK__BookAvail__BookI__6B24EA82">
+      <End Role="BookDetails" EntitySet="BookDetails" />
+      <End Role="BookAvailability" EntitySet="BookAvailability" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookDetai__Autho__5CD6CB2B" Association="Self.FK__BookDetai__Autho__5CD6CB2B">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookDetai__Categ__5DCAEF64" Association="Self.FK__BookDetai__Categ__5DCAEF64">
+      <End Role="BookCategory" EntitySet="BookCategory" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDe__BookI__656C112C" Association="Self.FK__BookingDe__BookI__656C112C">
+      <End Role="BookDetails" EntitySet="BookDetails" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDe__Statu__6477ECF3" Association="Self.FK__BookingDe__Statu__6477ECF3">
+      <End Role="BookingStatus" EntitySet="BookingStatus" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDeta__MID__6383C8BA" Association="Self.FK__BookingDeta__MID__6383C8BA">
+      <End Role="UserDetails" EntitySet="UserDetails" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserDetai__TypeI__1B0907CE" Association="Self.FK__UserDetai__TypeI__1B0907CE">
+      <End Role="TypeOfUser" EntitySet="TypeOfUser" />
+      <End Role="UserDetails" EntitySet="UserDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

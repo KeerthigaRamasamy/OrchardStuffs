@@ -1,0 +1,27 @@
+1. Consider a company with 50 employees and find any employee using optimized searching technique.
+ Optimized search techniques help in returning the result set in a reasonable period of time.
+
+
+2. To sort all the employees by age, create a binary tree. 
+
+3. Generate in-order, pre-order & post order traverse through the tree for the same.
+
+4. In cryptography, a salt is random data that is used as an additional input to a one-way function that hashes a password or passphrase.
+ Encrypt Employee password using salt (SHA-1). 
+
+5. Write a program that calculates compound interest to demonstrate typecasting.
+ For example, calculate the CI for the p=5678, r=9.876, t=12.5 months variable should be in float and should be in double.
+
+
+6. Write a program to show consolidated mark-sheet of n students in a high school, that will have, Name, Roll no. , Subjects, marks, total, obtained, percentage.
+ Also calculate the Avg. marks of the class & identify the 3 toppers. (Use proper format) 
+
+7. For the above problem, print all the records in Insertion order & sort the records on the basis of marks achieved.
+ (Format the output so it looks like mark-sheet.) 
+
+
+8. For the above problem, print each record like real mark-sheet using proper formatting depending up on the given roll no as input.
+
+ 
+9. In the above problem, create a divide-by-zero situation and write a piece of code that will be executed regardless if the exception occurs or not.
+

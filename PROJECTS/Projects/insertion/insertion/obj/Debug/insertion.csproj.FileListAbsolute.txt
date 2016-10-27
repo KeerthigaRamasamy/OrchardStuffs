@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\insertion\insertion\bin\Debug\insertion.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\insertion\insertion\obj\Debug\insertion.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\insertion\insertion\bin\Debug\insertion.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\insertion\insertion\bin\Debug\insertion.pdb
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\insertion\insertion\obj\Debug\insertion.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\insertion\insertion\obj\Debug\insertion.pdb

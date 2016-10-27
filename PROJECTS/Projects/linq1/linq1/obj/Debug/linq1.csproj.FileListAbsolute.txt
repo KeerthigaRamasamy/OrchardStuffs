@@ -1,0 +1,2 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\linq1\linq1\bin\Debug\linq1.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\linq1\linq1\obj\Debug\linq1.csprojResolveAssemblyReference.cache

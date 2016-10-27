@@ -1,0 +1,10 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\db_layer_class.dll.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\db_layer_class.dll
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\db_layer_class.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\EntityFramework.dll
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\EntityFramework.xml
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\obj\Debug\db_layer_class.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\obj\Debug\db_layer_class.dll
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\lms_sampe1\db_layer_class\obj\Debug\db_layer_class.pdb

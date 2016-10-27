@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b113440af72c4680aec51648d8b95a14" Name="Diagram1">
+        <EntityTypeShape EntityType="LMSJuly2016Model.BookAvailablity" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.Bookcategory" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.BookDetail" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.BookingDetail" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.BookingStatu" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.TypeOfUser" Width="1.5" PointX="3.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LMSJuly2016Model.UserDetail" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__BookAvail__BookI__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__BookDetai__Categ__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__BookingDe__BookI__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__BookingDe__Statu__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__BookingDeta__MID__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="LMSJuly2016Model.FK__UserDetai__TypeI__1B0907CE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

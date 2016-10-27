@@ -1,0 +1,5 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\employee\bin\Debug\employee.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\employee\bin\Debug\employee.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\employee\obj\Debug\employee.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\employee\obj\Debug\employee.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\employee\obj\Debug\employee.pdb

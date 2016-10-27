@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\bin\Debug\multithreading.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\bin\Debug\multithreading.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\bin\Debug\multithreading.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\obj\Debug\multithreading.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\obj\Debug\multithreading.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\multithreading\multithreading\obj\Debug\multithreading.pdb

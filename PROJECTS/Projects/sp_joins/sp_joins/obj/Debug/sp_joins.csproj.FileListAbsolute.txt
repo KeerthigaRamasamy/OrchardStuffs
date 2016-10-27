@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\bin\Debug\sp_joins.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\bin\Debug\sp_joins.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\bin\Debug\sp_joins.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\obj\Debug\sp_joins.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\obj\Debug\sp_joins.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\sp_joins\sp_joins\obj\Debug\sp_joins.pdb

@@ -1,0 +1,9 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\bin\Debug\calculator_windows_form.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.calculator.resources
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.Properties.Resources.resources
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.csproj.GenerateResource.Cache
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\bin\Debug\calculator_windows_form.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\bin\Debug\calculator_windows_form.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\calculator_windows_form\calculator_windows_form\obj\Debug\calculator_windows_form.pdb

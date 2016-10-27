@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\selection\selection\bin\Debug\selection.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\selection\selection\obj\Debug\selection.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\selection\selection\bin\Debug\selection.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\selection\selection\bin\Debug\selection.pdb
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\selection\selection\obj\Debug\selection.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\selection\selection\obj\Debug\selection.pdb

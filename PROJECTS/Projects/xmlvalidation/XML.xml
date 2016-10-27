@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Students>
+  <Student Id="101">
+    <Name>keerthi</Name>
+    <Gender>Female</Gender>
+    <marks>900</marks>
+  </Student>
+  <Student Id="102">
+    <Name>gangotri</Name>
+    <Gender>Female</Gender>
+    <marks>980</marks>
+  </Student>
+  <Student Id="103">
+    <Name>cibi</Name>
+    <Gender>male</Gender>
+    <marks>870</marks>
+  </Student>
+  <Student Id="104">
+    <Name>karthik</Name>
+    <Gender>male</Gender>
+    <marks>1000</marks>
+  </Student>
+</Students>

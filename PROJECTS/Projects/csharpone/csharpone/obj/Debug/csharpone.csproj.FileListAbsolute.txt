@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\bin\Debug\csharpone.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\obj\Debug\csharpone.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\bin\Debug\csharpone.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\bin\Debug\csharpone.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\obj\Debug\csharpone.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\csharpone\csharpone\obj\Debug\csharpone.pdb

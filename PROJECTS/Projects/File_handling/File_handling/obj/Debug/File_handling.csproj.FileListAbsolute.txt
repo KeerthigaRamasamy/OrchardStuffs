@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\bin\Debug\File_handling.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\bin\Debug\File_handling.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\bin\Debug\File_handling.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\obj\Debug\File_handling.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\obj\Debug\File_handling.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\File_handling\File_handling\obj\Debug\File_handling.pdb

@@ -1,0 +1,1 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\json_serialize\json_serialize\bin\Debug\json_serialize.exe.config

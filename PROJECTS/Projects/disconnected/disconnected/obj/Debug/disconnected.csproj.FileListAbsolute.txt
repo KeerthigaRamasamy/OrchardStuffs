@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\bin\Debug\disconnected.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\bin\Debug\disconnected.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\bin\Debug\disconnected.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\obj\Debug\disconnected.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\obj\Debug\disconnected.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\disconnected\disconnected\obj\Debug\disconnected.pdb

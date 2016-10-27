@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="M1037727" Class="linqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.17.2.13;Initial Catalog=M1037727;Integrated Security=True" SettingsObjectName="sample.Properties.Settings" SettingsPropertyName="M1037727ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.employee" Member="employees">
+    <Type Name="employee">
+      <Column Name="emp_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="emp_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.matches" Member="matches">
+    <Type Name="match">
+      <Column Name="match_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="match_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="first_team_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="second_team_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="first_team_goals" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="second_team_goals" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

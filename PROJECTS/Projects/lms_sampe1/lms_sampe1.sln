@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lms_sampe1", "lms_sampe1\lms_sampe1.csproj", "{CAE224F5-CEB3-4122-BBC4-FC6CF20A1669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dal", "dal\dal.csproj", "{2DBCCAB1-5610-461D-9054-C2A337B23923}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAE224F5-CEB3-4122-BBC4-FC6CF20A1669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE224F5-CEB3-4122-BBC4-FC6CF20A1669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE224F5-CEB3-4122-BBC4-FC6CF20A1669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE224F5-CEB3-4122-BBC4-FC6CF20A1669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBCCAB1-5610-461D-9054-C2A337B23923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBCCAB1-5610-461D-9054-C2A337B23923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBCCAB1-5610-461D-9054-C2A337B23923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBCCAB1-5610-461D-9054-C2A337B23923}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

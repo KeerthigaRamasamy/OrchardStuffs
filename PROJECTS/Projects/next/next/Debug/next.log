@@ -1,0 +1,112 @@
+﻿Build started 7/29/2016 8:22:17 AM.
+     1>Project "C:\Users\M1037727\Documents\Visual Studio 2013\Projects\next\next\next.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         Q:\VS2013PRO\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt next.c
+         next.c
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2065: 'student' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2146: syntax error : missing ';' before identifier 's1'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(6): error C2065: 's' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(8): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(8): error C2224: left of '.n' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(8): error C2198: 'gets' : too few arguments for call
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(10): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(10): error C2224: left of '.rno' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(12): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(12): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(14): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(14): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(16): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(16): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(18): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(18): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(20): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(20): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(22): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(22): error C2224: left of '.n' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(22): error C2198: 'gets' : too few arguments for call
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(24): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(24): error C2224: left of '.rno' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(26): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(26): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(28): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(28): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(30): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(30): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(32): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(32): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(34): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(34): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(36): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(36): error C2224: left of '.n' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(36): error C2198: 'gets' : too few arguments for call
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(38): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(38): error C2224: left of '.rno' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(40): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(40): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(42): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(42): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(44): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(44): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(46): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(46): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(48): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(48): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(50): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(50): error C2224: left of '.n' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(50): error C2198: 'gets' : too few arguments for call
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(52): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(52): error C2224: left of '.rno' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(54): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(54): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(56): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(56): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(58): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(58): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(60): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(60): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(62): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(62): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(63): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(64): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(65): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2065: 's4' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.m1' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.m2' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.m3' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.m4' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(66): error C2224: left of '.m5' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(67): error C2065: 's1' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(67): error C2224: left of '.a' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(67): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(68): error C2065: 's2' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(68): error C2224: left of '.a' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(68): error C2224: left of '.t' must have struct/union type
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(69): error C2065: 's3' : undeclared identifier
+     1>c:\users\m1037727\documents\visual studio 2013\projects\next\next\next.c(69): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\M1037727\Documents\Visual Studio 2013\Projects\next\next\next.vcxproj" (ClCompile target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.42

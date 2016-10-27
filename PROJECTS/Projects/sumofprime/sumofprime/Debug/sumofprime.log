@@ -1,0 +1,18 @@
+﻿Build started 7/28/2016 11:48:24 AM.
+     1>Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\sumofprime\sumofprime\sumofprime.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         Q:\VS2013PRO\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt sumofprime.c
+         sumofprime.c
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 q:\vs2013pro\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(10): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(20): warning C4047: '=' : 'int' differs in levels of indirection from 'char [2]'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(27): warning C4047: '==' : 'int' differs in levels of indirection from 'char [2]'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(36): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 q:\vs2013pro\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\sumofprime\sumofprime\sumofprime.c(34): warning C4700: uninitialized local variable 'sum' used
+     1>Done Building Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\sumofprime\sumofprime\sumofprime.vcxproj" (ClCompile target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.47

@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\bin\Debug\@lock.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\bin\Debug\@lock.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\bin\Debug\@lock.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\obj\Debug\lock.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\obj\Debug\@lock.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\multithreading\lock\obj\Debug\@lock.pdb

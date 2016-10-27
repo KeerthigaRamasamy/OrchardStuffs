@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LMSJuly2016ModelStoreContainer" CdmEntityContainer="LMSJuly2016Entities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.Author">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="AuthorDescription" ColumnName="AuthorDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookCategories">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookCategory">
+        <MappingFragment StoreEntitySet="BookCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookDetail">
+        <MappingFragment StoreEntitySet="BookDetails">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingDetail">
+        <MappingFragment StoreEntitySet="BookingDetails">
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="AcceptDate" ColumnName="AcceptDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingStatus">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingStatu">
+        <MappingFragment StoreEntitySet="BookingStatus">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="StatusDesc" ColumnName="StatusDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOfUsers">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.TypeOfUser">
+        <MappingFragment StoreEntitySet="TypeOfUser">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="DescriptionUser" ColumnName="DescriptionUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetails">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_cancel_request" FunctionName="LMSJuly2016Model.Store.sp_cancel_request" />
+    <FunctionImportMapping FunctionImportName="sp_Delete_Authors" FunctionName="LMSJuly2016Model.Store.sp_Delete_Authors" />
+    <FunctionImportMapping FunctionImportName="sp_Delete_BookCategory" FunctionName="LMSJuly2016Model.Store.sp_Delete_BookCategory" />
+    <FunctionImportMapping FunctionImportName="sp_Delete_BookDetails" FunctionName="LMSJuly2016Model.Store.sp_Delete_BookDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Delete_TYpeOfUser" FunctionName="LMSJuly2016Model.Store.sp_Delete_TYpeOfUser" />
+    <FunctionImportMapping FunctionImportName="sp_Delete_UserDetails" FunctionName="LMSJuly2016Model.Store.sp_Delete_UserDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_Authors" FunctionName="LMSJuly2016Model.Store.sp_Insert_Authors" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookCategory" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookCategory" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookDetails" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookDetails1" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookDetails1" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookingDetails" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookingDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookingDetails1" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookingDetails1" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_BookingStatus" FunctionName="LMSJuly2016Model.Store.sp_Insert_BookingStatus" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_TypeOfUser" FunctionName="LMSJuly2016Model.Store.sp_Insert_TypeOfUser" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_UserDetails" FunctionName="LMSJuly2016Model.Store.sp_Insert_UserDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Insert_UserDetails1" FunctionName="LMSJuly2016Model.Store.sp_Insert_UserDetails1" />
+    <FunctionImportMapping FunctionImportName="sp_request_book" FunctionName="LMSJuly2016Model.Store.sp_request_book" />
+    <FunctionImportMapping FunctionImportName="sp_Requested_Booking_details" FunctionName="LMSJuly2016Model.Store.sp_Requested_Booking_details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LMSJuly2016Model.sp_Requested_Booking_details_Result">
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="AcceptDate" ColumnName="AcceptDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_return_book" FunctionName="LMSJuly2016Model.Store.sp_return_book" />
+    <FunctionImportMapping FunctionImportName="sp_Select_All_BookDetails" FunctionName="LMSJuly2016Model.Store.sp_Select_All_BookDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LMSJuly2016Model.sp_Select_All_BookDetails_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Select_All_BookingDetails" FunctionName="LMSJuly2016Model.Store.sp_Select_All_BookingDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LMSJuly2016Model.sp_Select_All_BookingDetails_Result">
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="AcceptDate" ColumnName="AcceptDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Select_All_UserDetails" FunctionName="LMSJuly2016Model.Store.sp_Select_All_UserDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LMSJuly2016Model.sp_Select_All_UserDetails_Result">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_Booked_users" FunctionName="LMSJuly2016Model.Store.sp_select_Booked_users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LMSJuly2016Model.sp_select_Booked_users_Result">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Update_Authors" FunctionName="LMSJuly2016Model.Store.sp_Update_Authors" />
+    <FunctionImportMapping FunctionImportName="sp_Update_BookCategory" FunctionName="LMSJuly2016Model.Store.sp_Update_BookCategory" />
+    <FunctionImportMapping FunctionImportName="sp_Update_BookDetails" FunctionName="LMSJuly2016Model.Store.sp_Update_BookDetails" />
+    <FunctionImportMapping FunctionImportName="sp_Update_TYpeOfUser" FunctionName="LMSJuly2016Model.Store.sp_Update_TYpeOfUser" />
+    <FunctionImportMapping FunctionImportName="sp_Update_UserDetails" FunctionName="LMSJuly2016Model.Store.sp_Update_UserDetails" />
+  </EntityContainerMapping>
+</Mapping>

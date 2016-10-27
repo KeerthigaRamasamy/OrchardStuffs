@@ -1,0 +1,5 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\linq\linq\bin\Debug\linq.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\linq\linq\obj\Debug\linq.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\linq\linq\obj\Debug\linq.Form1.resources
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\linq\linq\obj\Debug\linq.Properties.Resources.resources
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\linq\linq\obj\Debug\linq.csproj.GenerateResource.Cache

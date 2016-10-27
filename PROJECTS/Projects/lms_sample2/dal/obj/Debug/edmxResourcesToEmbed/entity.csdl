@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LMSJuly2016Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="AuthorId" />
+    </Key>
+    <Property Name="AuthorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AuthorName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AuthorDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BookDetails" Relationship="Self.FK__BookDetai__Autho__5CD6CB2B" FromRole="Authors" ToRole="BookDetails" />
+  </EntityType>
+  <EntityType Name="BookCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryDesc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BookDetails" Relationship="Self.FK__BookDetai__Categ__5DCAEF64" FromRole="BookCategory" ToRole="BookDetails" />
+  </EntityType>
+  <EntityType Name="BookDetail">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AuthorId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Edition" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Publisher" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Availability" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Author" Relationship="Self.FK__BookDetai__Autho__5CD6CB2B" FromRole="BookDetails" ToRole="Authors" />
+    <NavigationProperty Name="BookCategory" Relationship="Self.FK__BookDetai__Categ__5DCAEF64" FromRole="BookDetails" ToRole="BookCategory" />
+    <NavigationProperty Name="BookingDetails" Relationship="Self.FK__BookingDe__BookI__656C112C" FromRole="BookDetails" ToRole="BookingDetails" />
+  </EntityType>
+  <EntityType Name="BookingDetail">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RequestDate" Type="DateTime" Precision="3" />
+    <Property Name="AcceptDate" Type="DateTime" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" />
+    <Property Name="ReturnDate" Type="DateTime" Precision="3" />
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BookDetail" Relationship="Self.FK__BookingDe__BookI__656C112C" FromRole="BookingDetails" ToRole="BookDetails" />
+    <NavigationProperty Name="BookingStatu" Relationship="Self.FK__BookingDe__Statu__6477ECF3" FromRole="BookingDetails" ToRole="BookingStatus" />
+    <NavigationProperty Name="UserDetail" Relationship="Self.FK__BookingDeta__MID__6383C8BA" FromRole="BookingDetails" ToRole="UserDetails" />
+  </EntityType>
+  <EntityType Name="BookingStatu">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusDesc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BookingDetails" Relationship="Self.FK__BookingDe__Statu__6477ECF3" FromRole="BookingStatus" ToRole="BookingDetails" />
+  </EntityType>
+  <EntityType Name="TypeOfUser">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescriptionUser" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="UserDetails" Relationship="Self.FK__UserDetai__TypeI__1B0907CE" FromRole="TypeOfUser" ToRole="UserDetails" />
+  </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="MID" />
+    </Key>
+    <Property Name="MID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <Property Name="PhoneNo" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="BookingDetails" Relationship="Self.FK__BookingDeta__MID__6383C8BA" FromRole="UserDetails" ToRole="BookingDetails" />
+    <NavigationProperty Name="TypeOfUser" Relationship="Self.FK__UserDetai__TypeI__1B0907CE" FromRole="UserDetails" ToRole="TypeOfUser" />
+  </EntityType>
+  <Association Name="FK__BookDetai__Autho__5CD6CB2B">
+    <End Role="Authors" Type="Self.Author" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorId" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookDetai__Categ__5DCAEF64">
+    <End Role="BookCategory" Type="Self.BookCategory" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDe__BookI__656C112C">
+    <End Role="BookDetails" Type="Self.BookDetail" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookDetails">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDe__Statu__6477ECF3">
+    <End Role="BookingStatus" Type="Self.BookingStatu" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookingStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookingDeta__MID__6383C8BA">
+    <End Role="UserDetails" Type="Self.UserDetail" Multiplicity="1" />
+    <End Role="BookingDetails" Type="Self.BookingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetails">
+        <PropertyRef Name="MID" />
+      </Principal>
+      <Dependent Role="BookingDetails">
+        <PropertyRef Name="MID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserDetai__TypeI__1B0907CE">
+    <End Role="TypeOfUser" Type="Self.TypeOfUser" Multiplicity="1" />
+    <End Role="UserDetails" Type="Self.UserDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfUser">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="UserDetails">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LMSJuly2016Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authors" EntityType="Self.Author" />
+    <EntitySet Name="BookCategories" EntityType="Self.BookCategory" />
+    <EntitySet Name="BookDetails" EntityType="Self.BookDetail" />
+    <EntitySet Name="BookingDetails" EntityType="Self.BookingDetail" />
+    <EntitySet Name="BookingStatus" EntityType="Self.BookingStatu" />
+    <EntitySet Name="TypeOfUsers" EntityType="Self.TypeOfUser" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+    <AssociationSet Name="FK__BookDetai__Autho__5CD6CB2B" Association="Self.FK__BookDetai__Autho__5CD6CB2B">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookDetai__Categ__5DCAEF64" Association="Self.FK__BookDetai__Categ__5DCAEF64">
+      <End Role="BookCategory" EntitySet="BookCategories" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDe__BookI__656C112C" Association="Self.FK__BookingDe__BookI__656C112C">
+      <End Role="BookDetails" EntitySet="BookDetails" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDe__Statu__6477ECF3" Association="Self.FK__BookingDe__Statu__6477ECF3">
+      <End Role="BookingStatus" EntitySet="BookingStatus" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookingDeta__MID__6383C8BA" Association="Self.FK__BookingDeta__MID__6383C8BA">
+      <End Role="UserDetails" EntitySet="UserDetails" />
+      <End Role="BookingDetails" EntitySet="BookingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserDetai__TypeI__1B0907CE" Association="Self.FK__UserDetai__TypeI__1B0907CE">
+      <End Role="TypeOfUser" EntitySet="TypeOfUsers" />
+      <End Role="UserDetails" EntitySet="UserDetails" />
+    </AssociationSet>
+    <FunctionImport Name="sp_Delete_Authors">
+      <Parameter Name="AuthorId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Delete_BookCategory">
+      <Parameter Name="CategoryID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Delete_BookDetails">
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Delete_TYpeOfUser">
+      <Parameter Name="TypeID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Delete_UserDetails">
+      <Parameter Name="MID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_Authors">
+      <Parameter Name="AuthorName" Mode="In" Type="String" />
+      <Parameter Name="AuthorDescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookCategory">
+      <Parameter Name="CategoryDesc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookDetails">
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="AuthorId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryID" Mode="In" Type="Int32" />
+      <Parameter Name="Edition" Mode="In" Type="String" />
+      <Parameter Name="Publisher" Mode="In" Type="String" />
+      <Parameter Name="Availability" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookingDetails">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="RequestDate" Mode="In" Type="DateTime" />
+      <Parameter Name="AcceptDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DueDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusID" Mode="In" Type="Int32" />
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookingStatus">
+      <Parameter Name="StatusDesc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_TypeOfUser">
+      <Parameter Name="DescriptionUser" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_UserDetails">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="TypeID" Mode="In" Type="Int32" />
+      <Parameter Name="PhoneNo" Mode="In" Type="Int32" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_Authors">
+      <Parameter Name="AuthorId" Mode="In" Type="Int32" />
+      <Parameter Name="AuthorName" Mode="In" Type="String" />
+      <Parameter Name="AuthorDescription" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_BookCategory">
+      <Parameter Name="CategoryID" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryDesc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_BookDetails">
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="AuthorId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryID" Mode="In" Type="Int32" />
+      <Parameter Name="Edition" Mode="In" Type="String" />
+      <Parameter Name="Publisher" Mode="In" Type="String" />
+      <Parameter Name="Availability" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_TYpeOfUser">
+      <Parameter Name="TypeID" Mode="In" Type="Int32" />
+      <Parameter Name="DescriptionUser" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_UserDetails">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="TypeID" Mode="In" Type="Int32" />
+      <Parameter Name="PhoneNo" Mode="In" Type="Int32" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_cancel_request">
+      <Parameter Name="BookingID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookDetails1">
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="AuthorName" Mode="In" Type="String" />
+      <Parameter Name="AuthorDescription" Mode="In" Type="String" />
+      <Parameter Name="CategoryDesc" Mode="In" Type="String" />
+      <Parameter Name="Edition" Mode="In" Type="String" />
+      <Parameter Name="Publisher" Mode="In" Type="String" />
+      <Parameter Name="Availability" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_BookingDetails1">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="RequestDate" Mode="In" Type="DateTime" />
+      <Parameter Name="AcceptDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DueDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusDesc" Mode="In" Type="String" />
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Insert_UserDetails1">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="DescriptionUser" Mode="In" Type="String" />
+      <Parameter Name="PhoneNo" Mode="In" Type="Int32" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_request_book">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="RequestDate" Mode="In" Type="DateTime" />
+      <Parameter Name="AcceptDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DueDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusDesc" Mode="In" Type="String" />
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Requested_Booking_details" ReturnType="Collection(LMSJuly2016Model.sp_Requested_Booking_details_Result)" />
+    <FunctionImport Name="sp_return_book">
+      <Parameter Name="BookingID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Select_All_BookDetails" ReturnType="Collection(LMSJuly2016Model.sp_Select_All_BookDetails_Result)" />
+    <FunctionImport Name="sp_Select_All_BookingDetails" ReturnType="Collection(LMSJuly2016Model.sp_Select_All_BookingDetails_Result)" />
+    <FunctionImport Name="sp_Select_All_UserDetails" ReturnType="Collection(LMSJuly2016Model.sp_Select_All_UserDetails_Result)" />
+    <FunctionImport Name="sp_select_Booked_users" ReturnType="Collection(LMSJuly2016Model.sp_select_Booked_users_Result)">
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="cancel_request">
+      <Parameter Name="BookingID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Insert_BookDetails1">
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="AuthorName" Mode="In" Type="String" />
+      <Parameter Name="AuthorDescription" Mode="In" Type="String" />
+      <Parameter Name="CategoryDesc" Mode="In" Type="String" />
+      <Parameter Name="Edition" Mode="In" Type="String" />
+      <Parameter Name="Publisher" Mode="In" Type="String" />
+      <Parameter Name="Availability" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Insert_BookingDetails1">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="RequestDate" Mode="In" Type="DateTime" />
+      <Parameter Name="AcceptDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DueDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusDesc" Mode="In" Type="String" />
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Insert_UserDetails1">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="DescriptionUser" Mode="In" Type="String" />
+      <Parameter Name="PhoneNo" Mode="In" Type="Int32" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Request_Book">
+      <Parameter Name="MID" Mode="In" Type="String" />
+      <Parameter Name="RequestDate" Mode="In" Type="DateTime" />
+      <Parameter Name="AcceptDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DueDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusDesc" Mode="In" Type="String" />
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Requested_Booking_details" EntitySet="BookingDetails" ReturnType="Collection(LMSJuly2016Model.BookingDetail)" />
+    <FunctionImport Name="Return_book">
+      <Parameter Name="BookingID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Select_Booked_Users" EntitySet="UserDetails" ReturnType="Collection(LMSJuly2016Model.UserDetail)">
+      <Parameter Name="BookID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_Requested_Booking_details_Result">
+    <Property Type="Int32" Name="BookingID" Nullable="false" />
+    <Property Type="String" Name="MID" Nullable="false" MaxLength="15" />
+    <Property Type="DateTime" Name="RequestDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="AcceptDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DueDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ReturnDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="StatusID" Nullable="false" />
+    <Property Type="Int32" Name="BookID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_Select_All_BookDetails_Result">
+    <Property Type="Int32" Name="BookID" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="AuthorId" Nullable="false" />
+    <Property Type="Int32" Name="CategoryID" Nullable="false" />
+    <Property Type="String" Name="Edition" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Publisher" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="Availability" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_Select_All_BookingDetails_Result">
+    <Property Type="Int32" Name="BookingID" Nullable="false" />
+    <Property Type="String" Name="MID" Nullable="false" MaxLength="15" />
+    <Property Type="DateTime" Name="RequestDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="AcceptDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DueDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ReturnDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="StatusID" Nullable="false" />
+    <Property Type="Int32" Name="BookID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_Select_All_UserDetails_Result">
+    <Property Type="String" Name="MID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="TypeID" Nullable="false" />
+    <Property Type="Int32" Name="PhoneNo" Nullable="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_select_Booked_users_Result">
+    <Property Type="String" Name="MID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="TypeID" Nullable="false" />
+    <Property Type="Int32" Name="PhoneNo" Nullable="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>

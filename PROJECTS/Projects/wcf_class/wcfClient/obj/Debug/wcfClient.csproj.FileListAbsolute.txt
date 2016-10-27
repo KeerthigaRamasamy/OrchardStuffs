@@ -1,0 +1,8 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\bin\Debug\wcfClient.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\bin\Debug\wcfClient.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\bin\Debug\wcfClient.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\obj\Debug\wcfClient.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\obj\Debug\wcfClient.Properties.Resources.resources
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\obj\Debug\wcfClient.csproj.GenerateResource.Cache
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\obj\Debug\wcfClient.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\wcf_class\wcfClient\obj\Debug\wcfClient.pdb

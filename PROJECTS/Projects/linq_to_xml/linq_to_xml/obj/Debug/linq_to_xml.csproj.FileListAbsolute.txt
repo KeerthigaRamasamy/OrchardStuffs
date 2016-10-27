@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\bin\Debug\linq_to_xml.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\bin\Debug\linq_to_xml.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\bin\Debug\linq_to_xml.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\obj\Debug\linq_to_xml.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\obj\Debug\linq_to_xml.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_xml\linq_to_xml\obj\Debug\linq_to_xml.pdb

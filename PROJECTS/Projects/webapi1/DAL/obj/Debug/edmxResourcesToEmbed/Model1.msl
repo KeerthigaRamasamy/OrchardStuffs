@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="M1037727ModelStoreContainer" CdmEntityContainer="M1037727Entities1">
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="M1037727Model.employee">
+        <MappingFragment StoreEntitySet="employees">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="location" ColumnName="location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Delete_employees" FunctionName="M1037727Model.Store.sp_Delete_employees" />
+    <FunctionImportMapping FunctionImportName="sp_GetEmployees" FunctionName="M1037727Model.Store.sp_GetEmployees" />
+    <FunctionImportMapping FunctionImportName="sp_GetEmployees_ById" FunctionName="M1037727Model.Store.sp_GetEmployees_ById" />
+    <FunctionImportMapping FunctionImportName="sp_insert_employees" FunctionName="M1037727Model.Store.sp_insert_employees" />
+    <FunctionImportMapping FunctionImportName="sp_Update_employees" FunctionName="M1037727Model.Store.sp_Update_employees" />
+  </EntityContainerMapping>
+</Mapping>

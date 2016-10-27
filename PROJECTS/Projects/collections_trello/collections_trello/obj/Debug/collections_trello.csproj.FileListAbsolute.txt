@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\collections_trello\collections_trello\bin\Debug\collections_trello.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\collections_trello\collections_trello\bin\Debug\collections_trello.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\collections_trello\collections_trello\bin\Debug\collections_trello.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\collections_trello\collections_trello\obj\Debug\collections_trello.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\collections_trello\collections_trello\obj\Debug\collections_trello.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\collections_trello\collections_trello\obj\Debug\collections_trello.csprojResolveAssemblyReference.cache

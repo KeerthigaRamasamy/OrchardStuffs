@@ -1,0 +1,10 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

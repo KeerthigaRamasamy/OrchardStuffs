@@ -1,0 +1,13 @@
+﻿Build started 7/27/2016 9:35:08 AM.
+     1>Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\NEW\NEW\NEW.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         Q:\VS2013PRO\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NEW.cpp
+         NEW.cpp
+     1>c:\users\m1037727\documents\visual studio 2013\projects\new\new\new.cpp(9): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 q:\vs2013pro\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\m1037727\documents\visual studio 2013\projects\new\new\new.cpp(18): error C3861: 'system': identifier not found
+     1>Done Building Project "C:\Users\M1037727\Documents\visual studio 2013\Projects\NEW\NEW\NEW.vcxproj" (ClCompile target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.32

@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\bin\Debug\revnum.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\bin\Debug\revnum.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\bin\Debug\revnum.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\obj\Debug\revnum.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\obj\Debug\revnum.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\revnum\revnum\obj\Debug\revnum.pdb

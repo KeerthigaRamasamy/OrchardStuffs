@@ -1,0 +1,6 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\bin\Debug\custom_exception.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\bin\Debug\custom_exception.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\bin\Debug\custom_exception.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\obj\Debug\custom_exception.csprojResolveAssemblyReference.cache
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\obj\Debug\custom_exception.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\custom_exception\custom_exception\obj\Debug\custom_exception.pdb

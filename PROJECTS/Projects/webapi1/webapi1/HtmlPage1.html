@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            var t = $("#t1");
+          ;
+            $("#b1").click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost:1396/api/Values',
+                    DataType: 'jason',
+                    success: function (data) {
+                        t.append('<tr><td>' + "ID" + '</td>' + '<td>' + "Name" + '</td>' + '<td>' + "Age" + '</td>' + '<td>' + "Location" + '</td></tr>');
+                        $.each(data, function (index, val) {
+                            t.append('<tr><td>' + val.id+ '</td>' + '<td>' + val.name + '</td>' + '<td>' + val.age + '</td>' + '<td>' + val.location + '</td></tr>');                          
+                        });
+                    }
+                });
+            });
+            $("#b2").click(function () {
+                t.empty();
+            });
+         
+        });
+
+    </script>
+    <title> First WebApi</title>
+</head>
+
+<body>
+    <h2> Employee details</h2>
+    <br />
+    <button id="b1">Get employee details</button>
+    <br />
+    <button id="b2">clear details</button>
+    <br />
+
+    <p>
+        <table id="t1" border="1">      
+        </table>
+    </p>
+   
+</body>
+
+
+</html>

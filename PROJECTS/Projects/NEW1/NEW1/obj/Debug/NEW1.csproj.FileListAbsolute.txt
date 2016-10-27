@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\bin\Debug\NEW1.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\bin\Debug\NEW1.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\bin\Debug\NEW1.pdb
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\obj\Debug\NEW1.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\obj\Debug\NEW1.exe
+C:\Users\M1037727\Documents\Visual Studio 2013\Projects\NEW1\NEW1\obj\Debug\NEW1.pdb

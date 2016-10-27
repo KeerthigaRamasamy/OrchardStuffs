@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LMSJuly2016ModelStoreContainer" CdmEntityContainer="LMSJuly2016Entities2">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.Author">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="AuthorDescription" ColumnName="AuthorDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.Author">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_Authors">
+            <ScalarProperty Name="AuthorDescription" ParameterName="AuthorDescription" />
+            <ScalarProperty Name="AuthorName" ParameterName="AuthorName" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_Authors">
+            <ScalarProperty Name="AuthorName" ParameterName="Authorname" Version="Current" />
+            <ScalarProperty Name="AuthorDescription" ParameterName="AuthorDescription" Version="Current" />
+            <ScalarProperty Name="AuthorId" ParameterName="AuthorId" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_Authors">
+            <ScalarProperty Name="AuthorId" ParameterName="AuthorId" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookAvailabilities">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookAvailability">
+        <MappingFragment StoreEntitySet="BookAvailability">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookAvailability">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_BookAvailability">
+            <ScalarProperty Name="Availability" ParameterName="Availability" />
+            <ScalarProperty Name="BookID" ParameterName="BookID" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_BookAvailability">
+            <ScalarProperty Name="Availability" ParameterName="Availability" Version="Current" />
+            <ScalarProperty Name="BookID" ParameterName="BookID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_BookAvailability">
+            <ScalarProperty Name="BookID" ParameterName="BookID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookCategories">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookCategory">
+        <MappingFragment StoreEntitySet="BookCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookCategory">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_BookCategory">
+            <ScalarProperty Name="CategoryDesc" ParameterName="CategoryDesc" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_BookCategory">
+            <ScalarProperty Name="CategoryDesc" ParameterName="CategoryDesc" Version="Current" />
+            <ScalarProperty Name="CategoryID" ParameterName="CategoryID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_BookCategory">
+            <ScalarProperty Name="CategoryID" ParameterName="CategoryID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookDetail">
+        <MappingFragment StoreEntitySet="BookDetails">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookDetail">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_BookDetails">
+            <ScalarProperty Name="Availability" ParameterName="Availability" />
+            <ScalarProperty Name="Publisher" ParameterName="Publisher" />
+            <ScalarProperty Name="Edition" ParameterName="Edition" />
+            <ScalarProperty Name="CategoryID" ParameterName="CategoryID" />
+            <ScalarProperty Name="AuthorId" ParameterName="AuthorId" />
+            <ScalarProperty Name="Title" ParameterName="Title" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_BookDetails">
+            <ScalarProperty Name="Availability" ParameterName="Availability" Version="Current" />
+            <ScalarProperty Name="Publisher" ParameterName="Publisher" Version="Current" />
+            <ScalarProperty Name="Edition" ParameterName="Edition" Version="Current" />
+            <ScalarProperty Name="CategoryID" ParameterName="CategoryID" Version="Current" />
+            <ScalarProperty Name="AuthorId" ParameterName="AuthorId" Version="Current" />
+            <ScalarProperty Name="Title" ParameterName="Title" Version="Current" />
+            <ScalarProperty Name="BookID" ParameterName="BookID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_BookDetails">
+            <ScalarProperty Name="BookID" ParameterName="BookID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingDetail">
+        <MappingFragment StoreEntitySet="BookingDetails">
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="AcceptDate" ColumnName="AcceptDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingDetail">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_BookingDetails">
+            <ScalarProperty Name="BookID" ParameterName="BookID" />
+            <ScalarProperty Name="StatusID" ParameterName="StatusID" />
+            <ScalarProperty Name="ReturnDate" ParameterName="ReturnDate" />
+            <ScalarProperty Name="DueDate" ParameterName="DueDate" />
+            <ScalarProperty Name="AcceptDate" ParameterName="AcceptDate" />
+            <ScalarProperty Name="RequestDate" ParameterName="RequestDate" />
+            <ScalarProperty Name="MID" ParameterName="MID" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingStatus">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingStatu">
+        <MappingFragment StoreEntitySet="BookingStatus">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="StatusDesc" ColumnName="StatusDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.BookingStatu">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_BookingStatus">
+            <ScalarProperty Name="StatusDesc" ParameterName="StatusDesc" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOfUsers">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.TypeOfUser">
+        <MappingFragment StoreEntitySet="TypeOfUser">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="DescriptionUser" ColumnName="DescriptionUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.TypeOfUser">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_TypeOfUser">
+            <ScalarProperty Name="DescriptionUser" ParameterName="DescriptionUser" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_TYpeOfUser">
+            <ScalarProperty Name="DescriptionUser" ParameterName="DescriptionUser" Version="Current" />
+            <ScalarProperty Name="TypeID" ParameterName="TypeID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_TYpeOfUser">
+            <ScalarProperty Name="TypeID" ParameterName="TypeID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="LMSJuly2016Model.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetails">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="LMSJuly2016Model.UserDetail">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="LMSJuly2016Model.Store.sp_Insert_UserDetails">
+            <ScalarProperty Name="email" ParameterName="email" />
+            <ScalarProperty Name="PhoneNo" ParameterName="PhoneNo" />
+            <ScalarProperty Name="TypeID" ParameterName="TypeID" />
+            <ScalarProperty Name="Name" ParameterName="Name" />
+            <ScalarProperty Name="MID" ParameterName="MID" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="LMSJuly2016Model.Store.sp_Update_UserDetails">
+            <ScalarProperty Name="email" ParameterName="email" Version="Current" />
+            <ScalarProperty Name="PhoneNo" ParameterName="PhoneNo" Version="Current" />
+            <ScalarProperty Name="TypeID" ParameterName="TypeID" Version="Current" />
+            <ScalarProperty Name="Name" ParameterName="Name" Version="Current" />
+            <ScalarProperty Name="MID" ParameterName="MID" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="LMSJuly2016Model.Store.sp_Delete_UserDetails">
+            <ScalarProperty Name="MID" ParameterName="MID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

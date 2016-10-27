@@ -1,0 +1,1 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\linq_to_sql\linq_to_sql\bin\Debug\linq_to_sql.exe.config

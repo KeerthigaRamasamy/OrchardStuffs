@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\bin\Debug\quick sort.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\obj\Debug\quick sort.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\bin\Debug\quick sort.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\bin\Debug\quick sort.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\obj\Debug\quick sort.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\quick sort\quick sort\obj\Debug\quick sort.pdb

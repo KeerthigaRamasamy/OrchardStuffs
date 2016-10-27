@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assemblies_demo", "assemblies_demo\assemblies_demo.csproj", "{3EF51AB2-EF08-46D0-89DD-B33A24CD2E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF51AB2-EF08-46D0-89DD-B33A24CD2E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF51AB2-EF08-46D0-89DD-B33A24CD2E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF51AB2-EF08-46D0-89DD-B33A24CD2E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF51AB2-EF08-46D0-89DD-B33A24CD2E37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

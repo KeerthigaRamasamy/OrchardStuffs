@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\bin\Debug\Anonymous_methods.exe.config
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\bin\Debug\Anonymous_methods.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\bin\Debug\Anonymous_methods.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\obj\Debug\Anonymous_methods.exe
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\obj\Debug\Anonymous_methods.pdb
+C:\Users\M1037727\Documents\Visual Studio 2015\Projects\delegates\Anonymous_methods\obj\Debug\Anonymous_methods.csprojResolveAssemblyReference.cache

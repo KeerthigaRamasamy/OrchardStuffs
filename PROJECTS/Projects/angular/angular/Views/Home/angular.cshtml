@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "angular";
+}
+
+<h2>angular</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/angular.js"></script>">
+
+<!--ng indicates angular js code-->
+<!--ng-model indicates data,(message is model name) it can be initialized in their parent tags using "ng-init"-->
+
+<div ng-app="myApp" ng-init="message='Hey type some message';n=55">
+    <h1> Angular JS Demo</h1>
+    <!--{{}} is to give a value-->
+    10 + 20 is{{10+20}}
+
+    <!-- controller is under the module myapp, so define the controller under myapp module-->
+    <div ng-controller="DemoController" ng-model="actors">
+        <input type="text" ng-model="message" /> <p></p>
+        Your message is {{message || "No message yet"}} <p></p>
+        <img ng-src="http://placekitten.com/300/350" alt="photo" />
+        <label>search:<input type="search"  ng-model="srch"/></label>
+        <p>
+            <ul>
+                <!--ng repeat will iterate through the collection-->
+                <li ng-repeat="actor in actors | filter:srch" >
+                    Name:<strong>{{actor.name}}</strong>
+                    city:<strong>{{actor.city.toUpperCase()}}</strong>
+                    <span><button ng-click="deleteactor($index)">X </button></span>
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label>actor name:<input type="text" ng-model="newname" /></label>
+        </p>
+        <p> <label>actor city:<input type="text" ng-model="newcity" /></label> </p>
+        <!--the value of n is{{n}}<p></p>
+        the length is {{msglen}}-->
+        <button ng-click="addactor()">add actor</button>
+    </div>
+    <div>
+    <button ng-click="showhideform()">Show/hide</button>
+</div>
+    the value of n is{{n}}
+</div>
+
+    <!-- myApp is the module name, 2nd arg is array of all dependencies-->
+    <!-- scope is an object($), do no start any identifier with a $ symbol-->
+    <!--controller is to provide the scope object-->
+    <!-- whatever elememts associated with the controller ,they become a part of scope object-->
+    <script type="text/javascript">
+        var myapp = angular.module("myApp", [])
+        myapp.controller("DemoController", function ($scope) {
+            $scope.message = 'welcome';
+            $scope.msglen = $scope.message.length;
+            //$scope.n = 50;
+            $scope.$watch("message", function (newvalue, oldvalue) {
+                $scope.msglen = $scope.newvalue.length;
+            });
+            $scope.actors = [
+                {name:'xyz' ,city:'c1'},
+                {name:'abc', city:'c2'},
+                {name: 'pqr',city:'c3'}
+            ];
+          
+            $scope.addactor=function(){
+                $scope.actors.push({ name: $scope.newname, city: $scope.newcity });
+                $scope.newname = $scope.newcity = "";
+            }
+            $scope.deleteactor=function(ndx)
+            {
+                $scope.actors.splice(ndx, 1);
+            }
+            $scope.showhideflag = false;
+            $scope.btntext = "Show form";
+            $scope.showhideform = function () {
+                $scope.showhideflag = !$scope.showhideflag;
+                $scope.btntext = ($scope.showhideflag) ? "Hide form" : "Show form";
+            }
+        });
+    </script>

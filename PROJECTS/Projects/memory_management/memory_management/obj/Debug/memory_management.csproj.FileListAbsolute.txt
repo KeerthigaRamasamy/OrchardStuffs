@@ -1,0 +1,6 @@
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\bin\Debug\memory_management.exe.config
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\bin\Debug\memory_management.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\bin\Debug\memory_management.pdb
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\obj\Debug\memory_management.csprojResolveAssemblyReference.cache
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\obj\Debug\memory_management.exe
+C:\Users\M1037727\Documents\visual studio 2013\Projects\memory_management\memory_management\obj\Debug\memory_management.pdb

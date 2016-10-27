@@ -1,0 +1,5 @@
+c:\users\m1037727\documents\visual studio 2015\Projects\assemblies_demo\assemblies_demo\bin\Debug\assemblies_demo.exe.config
+c:\users\m1037727\documents\visual studio 2015\Projects\assemblies_demo\assemblies_demo\bin\Debug\assemblies_demo.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\assemblies_demo\assemblies_demo\bin\Debug\assemblies_demo.pdb
+c:\users\m1037727\documents\visual studio 2015\Projects\assemblies_demo\assemblies_demo\obj\Debug\assemblies_demo.exe
+c:\users\m1037727\documents\visual studio 2015\Projects\assemblies_demo\assemblies_demo\obj\Debug\assemblies_demo.pdb
